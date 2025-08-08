@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<div class="banner text-center text-white d-flex flex-column justify-content-center align-items-center"
+         style="
+            background-image: url('{{ url_for('static', filename='images/banner2.jpg') }}');
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            margin: 0;
+            padding:0;
+            background-size: cover;
+            background-position: center; 
+            box-sizing: border-box; 
+            width: 100vw; 
+            margin-left: calc(50% - 50vw); /* Pushes the div to the absolute left edge, overriding potential parent padding */
+            margin-right: calc(50% - 50vw); /* Pushes the div to the absolute right edge */
+         ">
+<h2 style="text-align: center;">About Us</h2>
+<p style="text-align: center;">Expertise in embedded systems, enterprise applications and testing!</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 mb-3 border border-primary rounded p-3 bg-danger bg-opacity" >
+      <h3>Who we are?</h3>
+      <p>We are the global engineering and technology solutions company devoted to delivering knowledge that matters to help clients compete,innovate and propel forward along the digital continuum.</p>
+    </div>
+    <div class="col-sm-4 mb-3 border border-danger rounded p-3 bg-success bg-opacity">
+      <h3>Corporate Social Responsibility</h3>
+      <p>We Care is Mindteck's framework for honoring commitments and making a lasting difference throughout the organization, as well as externally to clients, partners and communities. The cornerstones of the framework are Knowledge, Opportunity, Advocacy, Inclusion, Goodwill and Respect.</p>
+    </div>
+    <div class="col-sm-4 mb-3 border border-warning rounded p-3 bg-primary bg-opacity-25">
+      <h3>Our global footprint</h3>
+      <p>Our global footprint spans the US (California, New Jersey, Missouri, Florida and Pennsylvania), Canada (Ontario), India (Bengaluru, Kolkata, Mumbai), Europe (United Kingdom and Germany), the APAC region (Singapore, Malaysia and Philippines), and Middle East (Bahrain). We also have two Development Centers – Kolkata and Bengaluru.</p>
+    </div>
+  </div>
+</div>
+
+     
+{% endblock %}

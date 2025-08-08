@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Services{% endblock %}
+{% block content %}
+<div class="banner text-center text-white d-flex flex-column justify-content-center align-items-center"
+         style="
+            background-image: url('{{ url_for('static', filename='images/services_banner.jpg') }}');
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            margin: 0;
+            padding:0;
+            background-size: cover;
+            background-position: center; 
+            box-sizing: border-box; 
+            width: 100vw; 
+            margin-left: calc(50% - 50vw); /* Pushes the div to the absolute left edge, overriding potential parent padding */
+            margin-right: calc(50% - 50vw); /* Pushes the div to the absolute right edge */
+         ">
+<h2 style="text-align: center;color: grey;font-size: 45px;" >Our Services</h2>
+<p style="text-align: center;color: grey;font-size: 20px;" >Here’s what we offer.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    
+      <h3>Data Center Transformation and IT Infrastructure Management</h3>
+      <p>Mindteck Infrastructure team has an extensive portfolio of technical skills. The experience and skills span multiple products, technologies, vendors and platforms. Its depth of technical skills ensures that IT incidents are handled efficiently and effectively. With a well-structured escalation matrix that maps onto high level of skills, Mindteck IT team ensures high quality of service and very high levels of availability of the IT infrastructure.With more and more Organizations worldwide transforming into Knowledge Warehouses, there is an immediate need to handle critical data in a simpler, flexible and more efficient manner without compromising on security and data loss. Mindteck's expertise in this domain can help any organization to enhance and optimize existing assets, lower operation costs, improve performance and meet service levels with greater efficiency.</p>
+    
+    
+      <h3>IT Infrastructure Management</h3>
+      <p>Mindteck's IT Infrastructure Management services help organizations maintain a reliable and efficient IT environment. Our team of experts works closely with clients to design, implement, and manage their IT infrastructure, ensuring optimal performance and minimal downtime. We leverage the latest technologies and best practices to deliver tailored solutions that meet the unique needs of each organization.Whether individual or team talent is required, for assignments or projects, onsite-offsite- or offshore, our services are geared toward helping clients optimize their operations and drive successful business outcomes.</p>
+  
+
+      <h3>Business Process Management</h3>
+      <p>Mindteck's Business Process Management (BPM) services help organizations streamline their operations, improve efficiency, and enhance customer satisfaction. Our BPM solutions are designed to automate and optimize business processes, enabling clients to focus on their core competencies while we handle the complexities of process management. We utilize advanced technologies and methodologies to deliver scalable and flexible BPM solutions that adapt to changing business needs.</p>
+  
+    </div>
+</div>
+
+{% endblock %}

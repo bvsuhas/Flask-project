@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Technology{% endblock %}
+{% block content %}
+<div class="banner text-center text-white d-flex flex-column justify-content-center align-items-center"
+         style="
+            background-image: url('{{ url_for('static', filename='images/tech_banner.jpg') }}');
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            margin: 0;
+            padding:0;
+            background-size: cover;
+            background-position: center; 
+            box-sizing: border-box; 
+            width: 100vw; 
+            margin-left: calc(50% - 50vw); /* Pushes the div to the absolute left edge, overriding potential parent padding */
+            margin-right: calc(50% - 50vw); /* Pushes the div to the absolute right edge */
+         ">
+  <h1 style="padding: 0; margin: 0; width: 100%;">Technology Solutions</h1>
+  <p class="lead">Innovating for a better tomorrow</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+     <div class="border border-primary rounded p-3 bg-success bg-opacity-10">
+        <div class="card-body">
+          <h5 class="card-title">Building The Future - IoT Solutions and Services</h5>
+          <p class="card-text">
+            Mindteck's IoT services and solutions are designed to provide efficient, cost-effective, secure and customized insights and analysis from real-time data collected via connected devices and products for better decision-making and more productive business operations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container"
+  <div class="row">
+    <div class="col-12">
+      
+        <div class="card-body">
+            <div class="border border-danger rounded p-3 bg-warning bg-opacity-10">
+              <h5 class="card-title">Expertise Unfolding with Embedded Design Services</h5>
+              <p class="card-text">
+                Mindteck's embedded design services leverage cutting-edge technologies and methodologies to deliver innovative solutions tailored to our clients' needs. Our team of experts collaborates closely with clients to ensure seamless integration and optimal performance of embedded systems.
+              </p>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="border border-warning rounded p-3 bg-info bg-opacity-10">
+        <div class="card-body">
+          <h5 class="card-title">Big Data, Smart Intelligence Services</h5>
+          <p class="card-text">
+            Mindteck's big data and smart intelligence services empower organizations to harness the full potential of their data. By leveraging advanced analytics, machine learning, and AI-driven insights, we help clients make informed decisions, optimize operations, and drive innovation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  {% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="banner text-center text-white d-flex flex-column justify-content-center align-items-center"
+         style="
+            background-image: url('{{ url_for('static', filename='images/banner1.png') }}');
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            margin: 0;
+            padding:0;
+            background-size: cover;
+            background-position: center; 
+            box-sizing: border-box; 
+            width: 100vw; 
+            margin-left: calc(50% - 50vw); /* Pushes the div to the absolute left edge, overriding potential parent padding */
+            margin-right: calc(50% - 50vw); /* Pushes the div to the absolute right edge */
+         ">
+  <h1 style="padding: 0; margin: 0; width: 100%;">Welcome to Mindteck</h1>
+  <p class="lead">A Global Information Technology company</p>
+</div>
+
+<div class="container">
+  <div class="row" style="padding:2em;">
+    <div class="col-sm-6 border border-primary rounded p-3 bg-primary text-white">
+      <h3>All about Mindteck</h3>
+      <p>Mindteck is an engineering and technology solutions company devoted to delivering knowledge that matters to help clients compete,
+innovate and propel forward along the digital continuum. The company, established in 1991, serves a top-tier Fortune 1000 clientele, start-ups,
+leading universities, and government entities around the globe.</p>
+    </div>
+    <div class="col-sm-6 border border-success rounded p-3 bg-warning text-dark">
+      <h3>Semiconductor Manufacturing Product Lifecycle Services</h3>
+      <p> Supercharge your time-to-market by harnessing our front- and back-end services and subsystems expertise to enhance equipment performance and meet productivity objectives.</p>
+    </div>
+   
+  </div>
+</div>
+
+<div class="container">
+  <div class="row" style="padding:2em;">
+    <div class="col-sm-4 border border-warning rounded p-3 bg-info text-dark">
+      <h3>Quality Tech Talent to Meet Evolving Workforce Needs</h3>
+      <p>Overcome talent gaps with our flexible engagement models, comprehensive recruitment methodologies, and top-notch IT talent...</p>
+    </div>
+
+    <div class="col-sm-4 border border-primary rounded p-3 bg-success text-white">
+          <h3>Strong Medical Device Exposure</h3>
+      <p>Our proven mastery in quality, end-to-end engineering, process compliance, and testing provides our clients an edge in medical imaging, remote diagnostics, and patient monitoring systems.</p>
+     
+    </div>
+
+
+    <div class="col-sm-4 border border-warning rounded p-3 bg-danger text-white">
+      <h3>End-to-end Storage Testing</h3>
+      <p>Speed testing of large-scale products confidently with our proven track record and extensive body of knowledge in test automation and certification across a variety of platforms...</p>
+    </div>
+ </div>
+
+
+{% endblock %}
+
